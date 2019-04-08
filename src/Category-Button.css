@@ -3,6 +3,11 @@
     margin: .125em;
     border: none;
     border-radius: 0.5em;
-    background-color: goldenrod;
+    background-color: green;
     font-size: 1.25em;
+}
+
+.selected {
+    background-color: greenyellow;
+    color: white;
 }

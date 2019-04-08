@@ -24,15 +24,23 @@ class App extends Component {
     const cats = categories.map((cat) => {
       return (
         <CategoryButton 
-                key={cat}
-                label={cat}
-                onClick={ (cat) => this.setCategory(cat) }/>)
+          isSelected={this.state.currentCategory === cat}
+          key={cat}
+          label={cat}
+          onClick={ (currentCategory) => this.setCategory(currentCategory) }/>)
     })
 
-    const items = inventory.map((item, index) => {
-      const { name, description, price} = item
-      return <Product key={index} title={name} desc={description} price={price} />
-    })
+    const products = inventory.filter( (item) => {
+      return item.category === this.state.currentCategory || this.state.currentCategory === null
+    }).map((item, index) => {
+      const { name, description, price } = item
+      return (
+        <Product 
+          key={`${name} - ${index}`}
+          title={name} 
+          desc={description}
+          price={price} />
+    )})
 
     return (
       <div className="App">
@@ -43,7 +51,7 @@ class App extends Component {
         </div>
 
         <div>
-          {items}
+          {products}
         </div>
 
         <div className="inventory">
