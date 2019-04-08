@@ -1,0 +1,8 @@
+.category-button {
+    padding: 1em 1.5em;
+    margin: .125em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: goldenrod;
+    font-size: 1.25em;
+}
