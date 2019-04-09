@@ -1,13 +1,15 @@
 .category-button {
-    padding: 1em 1.5em;
+    padding: .75em .75em;
     margin: .125em;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     background-color: green;
     font-size: 1.25em;
+    border: 2px solid #4CAF50
 }
 
 .selected {
     background-color: greenyellow;
     color: white;
+    border: none
 }

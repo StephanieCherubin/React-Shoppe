@@ -1,0 +1,6 @@
+.Products {
+    background-color: #eee;
+    padding: 0em 1em;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
