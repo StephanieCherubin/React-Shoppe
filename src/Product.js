@@ -1,16 +1,26 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Products.css';
 
 const Product = (props) => { // props.title props.price
-    const {title, description, price } = props
-    return (
-        <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <p>${price}</p>
-        </div>
-    )
-}
+  const { title, description, price } = props;
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <p>
+        $
+        {price}
+      </p>
+    </div>
+  );
+};
 
-export default Product
+Product.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+};
 
-//<Product title={} desc={} price={}
+export default Product;

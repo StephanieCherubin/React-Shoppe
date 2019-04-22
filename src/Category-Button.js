@@ -1,14 +1,22 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import './Category-Button.css'
+import PropTypes from 'prop-types';
+import './Category-Button.css';
 
-const CategoryButton = ( props ) => {
-    return (
-        <button
-            onClick={ ()=> props.onClick(props.label) }
-            className={`category-button ${props.isSelected ? "selected" : ""}`}>
-            { props.label }
-        </button>
-    )
-}
+const CategoryButton = props => (
+  <button
+    type="button"
+    onClick={() => props.onClick(props.label)}
+    className={`category-button ${props.isSelected ? 'selected' : ''}`}
+  >
+    { props.label }
+  </button>
+);
 
-export default CategoryButton
+CategoryButton.propTypes = {
+  onClick: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  isSelected: PropTypes.bool.isRequired,
+};
+
+export default CategoryButton;
