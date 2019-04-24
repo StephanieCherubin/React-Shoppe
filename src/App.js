@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import inventory, { categories } from './inventory';
@@ -37,7 +39,7 @@ class App extends Component {
       const { name, description, price } = item;
       return (
         <Product
-          key={`${name.id} - ${index.id}`}
+          key={`${name} - ${index}`}
           title={name}
           desc={description}
           price={price}
