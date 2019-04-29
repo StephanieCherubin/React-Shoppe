@@ -49,8 +49,6 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Wonder Emporium</h1>
-
         <div className="Categories">
           {cats}
         </div>

@@ -3,19 +3,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Products.css';
 
-const Product = (props) => { // props.title props.price
-  const { title, description, price } = props;
-  return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <p>
+const Product = ({ title, description, price }) => (
+  <div>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <p>
         $
-        {price}
-      </p>
-    </div>
-  );
-};
+      {price}
+    </p>
+  </div>
+);
 
 Product.propTypes = {
   title: PropTypes.string.isRequired,

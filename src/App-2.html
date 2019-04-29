@@ -1,0 +1,50 @@
+
+
+<div class="container">
+  <div class="nav"></div>
+  <div class="hero header"></div>
+  <div class="sidebar"></div>
+  <div class="main content"></div>
+  <div class="footer"></div>
+</div>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-areas: 'nav nav nav nav'
+                          'hero hero hero hero'
+                         'sidebar main main main'
+                         'footer footer footer footer';
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+  }
+  .nav {
+    grid-area: nav;
+    background-color: green;
+    height: 50px;
+  }
+  .hero {
+    grid-area: hero;
+    background-color: red;
+    height: 300px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: blanchedalmond;
+    height: 600px;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: rebeccapurple;
+    height: 600px;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: brown;
+    height: 50px;
+  }
+</style>

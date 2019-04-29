@@ -14,7 +14,7 @@ const CategoryButton = props => (
 );
 
 CategoryButton.propTypes = {
-  onClick: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   isSelected: PropTypes.bool.isRequired,
 };
