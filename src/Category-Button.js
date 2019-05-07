@@ -3,13 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Category-Button.css';
 
-const CategoryButton = props => (
+const CategoryButton = ({ isSelected, label, onClick }) => (
   <button
     type="button"
-    onClick={() => props.onClick(props.label)}
-    className={`category-button ${props.isSelected ? 'selected' : ''}`}
+    onClick={() => onClick(label)}
+    className={`category-button ${isSelected ? 'selected' : ''}`}
   >
-    { props.label }
+    { label }
   </button>
 );
 

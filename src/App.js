@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentCategory: !null,
+      currentCategory: 'All Categories',
     };
   }
 
@@ -25,15 +25,16 @@ class App extends Component {
     const { currentCategory } = this.state;
 
     const products = inventory.filter(
-      item => item.category === currentCategory || currentCategory === 'All',
+      item => item.category === currentCategory || currentCategory === 'All Categories',
     ).map((item, index) => {
-      const { name, description, price } = item;
+      const { name, description, price, id } = item;
       return (
         <Product
           key={`${name} - ${index}`}
           title={name}
           desc={description}
           price={price}
+          id={id}
         />
       );
     });

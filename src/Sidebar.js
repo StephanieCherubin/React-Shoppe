@@ -8,7 +8,7 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
 
-    categories.push('All');
+    categories.unshift('All Categories');
   }
 
   render() {
