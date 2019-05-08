@@ -6,11 +6,11 @@ import './Products.css';
 const Product = ({
   id, title, desc, price,
 }) => (
-  <div>
+  <div className="productImage">
     <img
       alt="product_image"
       className="productImage"
-      src={`https://picsum.photos/70?random=${id}`}
+      src={`https://picsum.photos/200?random=${id}`}
     />
     <h3>{title}</h3>
     <p className="description">{desc}</p>
@@ -18,6 +18,7 @@ const Product = ({
         $
       {price}
     </p>
+    <br />
   </div>
 );
 
@@ -25,7 +26,7 @@ Product.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
 };
 
 export default Product;
