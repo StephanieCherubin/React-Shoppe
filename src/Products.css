@@ -2,13 +2,15 @@
     padding: 0em 1em;
     display: grid;
     width: 80%;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
-
 .description {
     font-size: 0.89em;
 }
-
+.productImage{
+    grid-gap: 10px;
+}
 .price {
     color: rgb(118, 118, 118);
 }
