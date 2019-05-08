@@ -1,14 +1,12 @@
 .navbar {
-  height: 50px;
-  background-color: black;
+  height: 60px;
+  background-color: rgb(200, 240, 248);
   color: #fff;
 }
-.navbar .logo {
-  display: inline-block;
-  line-height: 50px;
-  padding: 0 30px;
-  font-size: 18px;
-  color: #fff;
+.brand{
+  height: 50px;
+  padding-left: 30px;
+  padding-top: 8px;
 }
 .navbar .list {
   display: flex;
@@ -18,16 +16,11 @@
   margin: 0;
   padding: 0;
   margin-right: 30px;
+  color: rgb(51, 51, 51);
 }
-.navbar .list-item {
-  text-decoration: none;
-  padding: 0 10px;
-  color: #fff;
-  height: 100%;
-  display: flex;
-  align-items: center;
+.navbar .list:hover {
+  color: #eee;
 }
-.navbar .list .list-item:hover {
-  color: paleturquoise;
-  background-color: rgba(0, 0, 0, 0.2);
+.fas {
+  margin-right: 7px;
 }
