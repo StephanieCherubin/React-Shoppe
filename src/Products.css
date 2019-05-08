@@ -8,9 +8,17 @@
 .description {
     font-size: 0.97em;
 }
-.productImage{
-    grid-gap: 10px;
+.product{
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.productImage {
+    height: auto;
+    width: 100%;
+}
+
 .price {
     color: rgb(51, 51, 51);
 }
