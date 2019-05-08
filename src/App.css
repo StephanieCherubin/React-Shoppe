@@ -1,11 +1,10 @@
 .App {
     width: 960px;
     margin: auto;
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.body {
     display: flex;
     flex-direction: row;
 }
-
-
-
-

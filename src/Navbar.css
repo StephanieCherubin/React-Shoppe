@@ -2,6 +2,7 @@
   height: 50px;
   background-color: black;
   color: white;
+  margin-bottom: 2em;
 }
 .navbar .logo {
   display: inline-block;
@@ -18,13 +19,14 @@
   padding: 0;
   margin-right: 30px;
 }
-.navbar .list .list-item {
+.navbar .list-item {
   text-decoration: none;
   padding: 0 10px;
   color: #ffffff;
   height: 100%;
   display: flex;
   align-items: center;
+  color: white;
 }
 .navbar .list .list-item:hover {
   color: paleturquoise;

@@ -3,7 +3,11 @@ import React from 'react';
 
 const Home = () => (
   <div>
-    <h1>Home</h1>
+    <img
+      alt="product_image"
+      className="productImage"
+      src={`https://picsum.photos/70?random=${id}`}
+    />
   </div>
 );
 
