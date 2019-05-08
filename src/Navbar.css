@@ -1,0 +1,32 @@
+.navbar {
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+.navbar .logo {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+.navbar .list {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+.navbar .list .list-item {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar .list .list-item:hover {
+  color: paleturquoise;
+  background-color: rgba(0, 0, 0, 0.2);
+}

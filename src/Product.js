@@ -5,9 +5,7 @@ import './Products.css';
 
 const Product = ({
   id, title, desc, price,
-}) => {
-  console.log(id)
-  return (
+}) => (
   <div>
     <img
       alt="product_image"
@@ -15,18 +13,18 @@ const Product = ({
       src={`https://picsum.photos/70?random=${id}`}
     />
     <h3>{title}</h3>
-    <p>{desc}</p>
-    <p>
+    <p className="description">{desc}</p>
+    <p className="price">
         $
       {price}
     </p>
   </div>
-)};
+);
 
 Product.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
 };
 
