@@ -27,10 +27,9 @@ class Sidebar extends Component {
         <div className="widget">
           <input
             type="search"
-            id="woocommerce-product-search-field"
+            id="product-search-field"
             className="search-field"
             placeholder="Search Products"
-            value=""
             name="s"
             title="Search for:"
           />
@@ -50,7 +49,7 @@ class Sidebar extends Component {
 
 Sidebar.propTypes = {
   currentCategory: PropTypes.string.isRequired,
-  setCategory: PropTypes.string.isRequired,
+  setCategory: PropTypes.func.isRequired,
 };
 
 export default Sidebar;
