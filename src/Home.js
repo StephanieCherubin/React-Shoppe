@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 
-const Home = () => (
+const Home = id => (
   <div>
     <img
-      alt="product_image"
-      className="productImage"
-      src={`https://picsum.photos/70?random=${id}`}
+      alt="background_image"
+      className="backgroundImage"
+      src={`https://picsum.photos/1200/590?random=${id}`}
     />
   </div>
 );
