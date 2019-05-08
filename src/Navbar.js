@@ -5,8 +5,8 @@ import './Navbar.css';
 
 const Navbar = () => (
   <div className="navbar">
-    <div className="logo">Wonder Emporium</div>
-    <Link to="/shop" className="list-item">Shop</Link>
+    <Link to="/" className="logo">Wonder Emporium</Link>
+    <Link to="/shop" className="logo">Shop</Link>
   </div>
 );
 
