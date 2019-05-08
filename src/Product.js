@@ -6,7 +6,7 @@ import './Products.css';
 const Product = ({
   id, title, desc, price,
 }) => (
-  <div className="productImage">
+  <div className="product">
     <img
       alt="product_image"
       className="productImage"
