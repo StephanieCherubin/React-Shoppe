@@ -48,9 +48,7 @@ class Shop extends React.Component {
         <div className="Products">
           {products}
         </div>
-
       </div>
-
     );
   }
 }
