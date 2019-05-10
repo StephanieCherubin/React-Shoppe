@@ -1,23 +1,13 @@
-.navbar {
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+}
+.footer {
   height: 60px;
-  background-color: rgb(200, 240, 248);
+  background-color: #222;
   color: #fff;
-}
-.brand{
-  height: 50px;
-  padding-left: 30px;
-  padding-top: 8px;
-}
-.navbar .list {
+  min-height: 8vh;
   display: flex;
-  align-items: center;
-  float: right;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  margin-right: 30px;
-  color: rgb(51, 51, 51);
-}
-.navbar .list:hover {
-  color: rgb(187, 187, 187);
+  flex-direction: column;
+  flex: 1 0 auto;
 }
