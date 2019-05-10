@@ -14,10 +14,10 @@ class Sidebar extends Component {
 
   render() {
     const { currentCategory, setCategory } = this.props;
-    const cats = categories.map(cat => (
+    const cats = categories.map((cat, index) => (
       <CategoryButton
         isSelected={currentCategory === 'cat'}
-        key={cat}
+        key={cat + index}
         label={cat}
         onClick={() => setCategory(cat)}
       />));
