@@ -36,7 +36,7 @@ class Sidebar extends Component {
         </div>
         <br />
         <div className="widget">
-          <h3 className="widget-title">Product Categories</h3>
+          <p className="sidebar-title">PRODUCT CATEGORIES</p>
           <div className="Categories">
             {cats}
           </div>
