@@ -4,3 +4,12 @@
  padding-left: 25px;
  padding-right: 25px;
 }
+.sidebar-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.search-field {
+  border-radius: 7%;
+}
