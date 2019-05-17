@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Category-Button.css';
 
+
+// Can these buttons be links??
 const CategoryButton = ({ isSelected, label, onClick }) => (
   <button
     type="button"
