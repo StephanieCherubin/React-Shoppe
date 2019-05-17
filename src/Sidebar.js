@@ -9,12 +9,12 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
 
-    categories.unshift('All Categories');
+    this.categories = ['All Categories', ...categories];
   }
 
   render() {
     const { currentCategory, setCategory } = this.props;
-    const cats = categories.map((cat, index) => (
+    const cats = this.categories.map((cat, index) => (
       <CategoryButton
         isSelected={currentCategory === 'cat'}
         key={cat + index}
