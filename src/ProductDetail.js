@@ -5,7 +5,6 @@ import inventory from './Inventory';
 
 const ProductDetail = ({ match }) => {
   const { id } = match.params;
-  // const id = match.params.id;
 
   function exact(product) {
     return product.id === Number(id);
