@@ -606,10 +606,17 @@ let inventory = [
 
 // inventory = _.uniqBy(inventory, 'name')
 inventory = _.sortBy(inventory, 'category');
+
+inventory.forEach((item, i) => {
+  if (Math.random() > 0.5) {
+    item.isSelected = true;
+  } else {
+    item.isSelected = false;
+  }
+  console.log(item);
+});
+
 const c = inventory.map(item => item.category);
 
 export const categories = _.uniq(c);
 export default inventory;
-
-// console.log(inventory)
-// console.log(categories)

@@ -12,11 +12,21 @@ class Shop extends React.Component {
 
     this.state = {
       currentCategory: 'All Categories',
+      wishlist: [],
     };
   }
 
   setCategory(cat) {
     this.setState({ currentCategory: cat });
+  }
+
+  addToWishList(id) {
+    inventory.forEach((item) => {
+      if (item.id === id) {
+        item.isSelected = !item.isSelected;
+        this.setState({ wishlist: [...this.state.wishlist, 1] });
+      }
+    });
   }
 
   render() {
@@ -26,7 +36,7 @@ class Shop extends React.Component {
       item => item.category === currentCategory || currentCategory === 'All Categories',
     ).map((item, index) => {
       const {
-        name, description, price, id,
+        name, description, price, id, isSelected,
       } = item;
       return (
         <Product
@@ -35,6 +45,11 @@ class Shop extends React.Component {
           desc={description}
           price={price}
           id={id}
+          isSelected={isSelected}
+          addToWishList={() => {
+            console.log(name, description, price, id, isSelected);
+            this.addToWishList(id);
+          }}
         />
       );
     });

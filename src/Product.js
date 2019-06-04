@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './Product.css';
 
 const Product = ({
-  id, title, desc, price,
+  id, title, desc, price, isSelected, addToWishList,
 }) => (
   <div className="product">
     <Link to={`product/${id}`}>
@@ -21,6 +21,14 @@ const Product = ({
       $
       {price}
     </p>
+    <input
+      type="checkbox"
+      checked={isSelected}
+      onClick={(e) => {
+        // console.log(`${id} was clicked`)
+        addToWishList();
+      }}
+    />
     <br />
   </div>
 );
@@ -29,7 +37,9 @@ Product.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  isSelected: PropTypes.string.isRequired,
+  addToWishList: PropTypes.string.isRequired,
 };
 
 export default Product;
