@@ -1,4 +1,4 @@
-/* eslint-disable no-shadow */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/no-array-index-key */
 
 import React from 'react';
