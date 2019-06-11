@@ -8,3 +8,11 @@
 .category-button:hover {
     color: gray;
 }
+
+.selected {
+    color: skyblue !important;
+}
+
+.category-button:focus {
+    outline: 0
+}
