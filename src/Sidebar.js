@@ -16,7 +16,7 @@ class Sidebar extends Component {
     const { currentCategory, setCategory } = this.props;
     const cats = this.categories.map((cat, index) => (
       <CategoryButton
-        isSelected={currentCategory === 'cat'}
+        isSelected={currentCategory === cat}
         key={cat + index}
         label={cat}
         onClick={() => setCategory(cat)}
