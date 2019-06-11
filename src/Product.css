@@ -39,3 +39,37 @@
     color: rgb(51, 51, 51);
     font-size: 1.3em;
 }
+/* .red-heart-checkbox {
+    visibility: hidden;
+} */
+.red-heart-checkbox:checked + label:before {
+    content: "";
+    color: #f00;
+}
+.red-heart-checkbox + label:before {
+    width: 31.5px;
+    height: 30px;
+    content: "";
+    position: absolute;
+    margin-left: -48px;
+    margin-top: 3px;
+    font-family: FontAwesome;
+    font-size: 30px;
+    content: "";
+    transition: all 0.3s;
+    color: #888;
+}
+.red-heart-checkbox + label:hover:before {
+    transform: scale(1.2);
+}
+
+.control-group {
+    margin: 3px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
