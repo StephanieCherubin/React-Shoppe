@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CategoryButton from './Category-Button';
+import CategoryButton from './components/Category-Button/Category-Button';
 import { categories } from './Inventory';
 import './Sidebar.css';
 

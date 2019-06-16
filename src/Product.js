@@ -13,7 +13,7 @@ class Product extends React.Component {
     super(props);
 
     this.state = {
-      checked: false
+      checked: false,
     }
   }
 

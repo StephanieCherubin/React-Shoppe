@@ -9,8 +9,8 @@ import Home from './Home';
 import Navbar from './Navbar';
 import Shop from './Shop';
 import ProductDetail from './ProductDetail';
-import Footer from './Footer';
-import './Footer.css';
+import Footer from './components/Footer/Footer';
+import './components/Footer/Footer.css';
 import './Categories.css';
 
 const App = () => (
