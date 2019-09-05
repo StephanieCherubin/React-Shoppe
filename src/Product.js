@@ -1,14 +1,14 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import HeartCheckbox from 'react-heart-checkbox';
+// import HeartCheckbox from 'react-heart-checkbox';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Product.css';
 
 
-class Product extends React.Component {
+class Product extends Component {
   constructor(props) {
     super(props);
 
@@ -41,7 +41,7 @@ class Product extends React.Component {
         <input
           type="checkbox"
           checked={isSelected}
-          className="red-heart-checkbox"
+          className="red-heart-checkbox"  
           onClick={(e) => {
             // console.log(`${id} was clicked`)
             addToWishList();

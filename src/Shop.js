@@ -1,12 +1,12 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, { Component } from 'react';
 import Sidebar from './Sidebar';
 import Product from './Product';
 import inventory from './Inventory';
 
-class Shop extends React.Component {
+class Shop extends Component {
   constructor(props) {
     super(props);
 
