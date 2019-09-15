@@ -41,7 +41,7 @@ class Product extends Component {
         <input
           type="checkbox"
           checked={isSelected}
-          className="red-heart-checkbox"  
+          className="red-heart-checkbox"
           onClick={(e) => {
             // console.log(`${id} was clicked`)
             addToWishList();
