@@ -2,7 +2,7 @@
 /* eslint-disable react/no-array-index-key */
 
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
 import Home from './Home';
@@ -14,15 +14,15 @@ import './components/Footer/Footer.css';
 import './Categories.css';
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <div className="App">
       <Navbar />
       <Route path="/" exact component={Home} />
-      <Route path="/shop" exact component={Shop} />
-      <Route path="/product/:id" exact component={ProductDetail} />
+      <Route path="/shop" component={Shop} />
+      <Route path="/product/:id" component={ProductDetail} />
       <Footer />
     </div>
-  </BrowserRouter>
+  </Router>
 );
 
 
