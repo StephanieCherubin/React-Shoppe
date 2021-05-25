@@ -9955,6 +9955,14 @@
     "json3" "^3.3.2"
     "url-parse" "^1.1.8"
 
+"sockjs@^0.3.19", "sockjs@0.3.19":
+  "integrity" "sha512-V48klKZl8T6MzatbLlzzRNhMepEys9Y4oGFpypBFFn1gLI/QQ9HtLLyWJNbPlwGLelOVOEijUbTTJeLLI59jLw=="
+  "resolved" "https://registry.npmjs.org/sockjs/-/sockjs-0.3.19.tgz"
+  "version" "0.3.19"
+  dependencies:
+    "faye-websocket" "^0.10.0"
+    "uuid" "^3.0.1"
+
 "sockjs@^0.3.21":
   "integrity" "sha512-DhbPFGpxjc6Z3I+uX07Id5ZO2XwYsWOrYjaSeieES78cq+JaJvVe5q/m1uvjIQhXinhIeCFRH6JgXe+mvVMyXw=="
   "resolved" "https://registry.npmjs.org/sockjs/-/sockjs-0.3.21.tgz"
@@ -9963,14 +9971,6 @@
     "faye-websocket" "^0.11.3"
     "uuid" "^3.4.0"
     "websocket-driver" "^0.7.4"
-
-"sockjs@0.3.19":
-  "integrity" "sha512-V48klKZl8T6MzatbLlzzRNhMepEys9Y4oGFpypBFFn1gLI/QQ9HtLLyWJNbPlwGLelOVOEijUbTTJeLLI59jLw=="
-  "resolved" "https://registry.npmjs.org/sockjs/-/sockjs-0.3.19.tgz"
-  "version" "0.3.19"
-  dependencies:
-    "faye-websocket" "^0.10.0"
-    "uuid" "^3.0.1"
 
 "socksjs@^0.5.0":
   "integrity" "sha1-d7AF4y0b/JblYP7dXX7tzxIPh+M="
