@@ -2994,7 +2994,7 @@
   dependencies:
     "pako" "~1.0.5"
 
-"browserslist@^4.0.0", "browserslist@^4.12.0", "browserslist@^4.6.2", "browserslist@^4.6.4", "browserslist@4.14.2":
+"browserslist@^4.0.0", "browserslist@^4.12.0", "browserslist@^4.14.2", "browserslist@^4.6.2", "browserslist@^4.6.4", "browserslist@4.14.2":
   "integrity" "sha512-HI4lPveGKUR0x2StIz+2FXfDk9SfVMrxn6PLh1JeGUwcuoDkdKZebWiyLRJ68iIPDpMI4JLVDf7S7XzslgWOhw=="
   "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.14.2.tgz"
   "version" "4.14.2"
@@ -3279,7 +3279,7 @@
   optionalDependencies:
     "fsevents" "^1.2.7"
 
-"chokidar@^3.4.1":
+"chokidar@^3.4.1", "chokidar@^3.5.1":
   "integrity" "sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.1.tgz"
   "version" "3.5.1"
