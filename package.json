@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "ansi-html": "^0.0.7",
+    "ansi-html": "^0.0.8",
     "browserslist": "^4.16.6",
     "chokidar": "^3.5.1",
     "dns-packet": "^5.2.2",
